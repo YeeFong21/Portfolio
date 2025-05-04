@@ -113,7 +113,6 @@ img {
     color: var(--primary-color);
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -169,7 +168,6 @@ header .container {
     transition: var(--transition);
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
@@ -226,7 +224,6 @@ header .container {
     }
 }
 
-/* About Section */
 .about {
     padding: 100px 0;
     background-color: var(--light-color);
@@ -257,14 +254,12 @@ header .container {
     margin-top: 20px;
 }
 
-/* Education Timeline Styles - Top to Bottom Animation */
 .education {
     padding: 100px 0;
     position: relative;
     min-height: 100vh;
 }
 
-/* Timeline Container */
 .timeline-container {
     position: relative;
     max-width: 1000px;
@@ -273,7 +268,6 @@ header .container {
     min-height: 800px;
 }
 
-/* Timeline Line */
 .timeline-line {
     position: absolute;
     width: 4px;
@@ -286,27 +280,24 @@ header .container {
     height: 100%;
 }
 
-/* Timeline Progress - This will be animated from top to bottom */
 .timeline-progress {
     position: absolute;
     width: 100%;
     background-color: var(--primary-color);
-    top: 0; /* Start from top */
+    top: 0;
     left: 0;
     transform: scaleY(0);
-    transform-origin: top; /* Origin at top */
+    transform-origin: top; 
     transition: transform 0.3s ease;
     border-radius: 2px;
     height: 100%;
 }
 
-/* Timeline Items Container */
 .timeline-items {
     position: relative;
     padding-bottom: 100px;
 }
 
-/* Timeline Item */
 .timeline-item {
     position: relative;
     margin-bottom: 100px;
@@ -323,7 +314,6 @@ header .container {
     opacity: 1;
 }
 
-/* Timeline Dot */
 .timeline-dot {
     position: absolute;
     width: 20px;
@@ -342,7 +332,6 @@ header .container {
     background-color: var(--primary-color);
 }
 
-/* Timeline Content */
 .timeline-content {
     width: 45%;
     padding: 25px;
@@ -357,7 +346,6 @@ header .container {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Alternate timeline items left and right */
 .timeline-item:nth-child(odd) .timeline-content {
     margin-left: auto;
 }
@@ -366,7 +354,6 @@ header .container {
     margin-right: auto;
 }
 
-/* Timeline Date */
 .timeline-date {
     display: inline-block;
     padding: 5px 15px;
@@ -382,16 +369,15 @@ header .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px; /* Space above the image */
+    margin-top: 15px;
 }
 
 .timeline-img img {
-    max-width: 500px; /* Limit image size */
+    max-width: 500px; 
     height: auto;
     object-fit: contain;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .timeline-line {
         left: 30px;
@@ -412,7 +398,6 @@ header .container {
     }
 }
 
-/* Projects Section */
 .projects {
     padding: 100px 0;
     background-color: var(--light-color);
@@ -489,16 +474,12 @@ header .container {
     margin-top: 50px;
 }
 
-/* Enhanced Project Section Styles */
-
-/* Project Grid Layout */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
 }
 
-/* Project Card Styling */
 .project-card {
     border-radius: 12px;
     overflow: hidden;
@@ -515,36 +496,31 @@ header .container {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Image Container Styling */
 .project-img {
     position: relative;
     width: 100%;
-    height: 220px; /* Fixed height for all project images */
+    height: 220px; 
     overflow: hidden;
-    background-color: #f5f5f5; /* Light background for images that don't fill the space */
+    background-color: #f5f5f5; 
 }
 
-/* Image Styling */
 .project-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cover ensures the image fills the container */
-    object-position: center; /* Center the image */
+    object-fit: cover; 
+    object-position: center; 
     transition: transform 0.5s ease;
 }
 
-/* Special handling for logo-type images (like MedConnect) */
 .project-card:first-child .project-img img {
-    object-fit: contain; /* 'contain' works better for logos */
-    padding: 20px; /* Add some padding around the logo */
+    object-fit: contain; 
+    padding: 20px;
 }
 
-/* Hover effect for images */
 .project-card:hover .project-img img {
     transform: scale(1.05);
 }
 
-/* Add an overlay on hover */
 .project-img::after {
     content: '';
     position: absolute;
@@ -561,7 +537,6 @@ header .container {
     opacity: 1;
 }
 
-/* Project Content Styling */
 .project-content {
     padding: 25px;
     flex-grow: 1;
@@ -595,16 +570,15 @@ header .container {
     margin-bottom: 20px;
     color: #666;
     line-height: 1.6;
-    flex-grow: 1; /* Makes the description take up available space */
+    flex-grow: 1; 
 }
 
 .project-links {
     display: flex;
     gap: 10px;
-    margin-top: auto; /* Pushes links to bottom */
+    margin-top: auto; 
 }
 
-/* Button styling */
 .project-links .btn {
     flex: 1;
     text-align: center;
@@ -614,7 +588,6 @@ header .container {
     gap: 8px;
 }
 
-/* View More Button */
 .projects-more {
     text-align: center;
     margin-top: 50px;
@@ -625,7 +598,6 @@ header .container {
     font-size: 1rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -650,7 +622,6 @@ header .container {
     }
 }
 
-/* Skills Section Styles */
 .skills {
     padding: 100px 0;
 }
@@ -723,7 +694,6 @@ header .container {
     font-weight: 500;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .skill-badge {
         width: 90px;
@@ -750,14 +720,12 @@ header .container {
     }
 }
 
-/* Alternative version - if you want a grid layout instead of categories */
 .skills-grid-alt {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
-/* Animation for skill badges */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -774,7 +742,6 @@ header .container {
     opacity: 0;
 }
 
-/* Stagger the animations */
 .skill-badge:nth-child(1) { animation-delay: 0.1s; }
 .skill-badge:nth-child(2) { animation-delay: 0.2s; }
 .skill-badge:nth-child(3) { animation-delay: 0.3s; }
@@ -786,9 +753,6 @@ header .container {
 .skill-badge:nth-child(9) { animation-delay: 0.9s; }
 .skill-badge:nth-child(10) { animation-delay: 1.0s; }
 
-
-
-/* Contact Section */
 .contact {
     padding: 100px 0;
     background-color: var(--light-color);
@@ -838,7 +802,6 @@ header .container {
     border-color: var(--primary-color);
 }
 
-/* Footer */
 footer {
     background-color: var(--dark-color);
     color: white;
@@ -863,7 +826,6 @@ footer {
     color: var(--primary-color);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
     .about-content,
     .contact-content {
